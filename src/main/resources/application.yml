@@ -1,0 +1,29 @@
+debug: true
+
+logging:
+  level:
+    org:
+      springframework:
+        web: TRACE
+        client:
+          MessageTracing:
+            sent: TRACE
+            received: TRACE
+        server:
+          MessageTracing:
+            sent: TRACE
+            received: TRACE
+
+---
+
+spring:
+     profiles:
+       active: DEV
+
+
+
+---
+
+spring:
+  profiles:
+    active: PROD
